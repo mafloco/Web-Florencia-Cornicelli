@@ -1,132 +1,70 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
+    <link rel="stylesheet" href="styles.css">
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Florerncia Cornicelli - Codo a Codo</title>
-    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
-    <link rel="stylesheet" href="styles/index.css">
+    <title>Mi Página Web</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <nav>
-        <div class="brandLogo">
-            <div class="logo"></div>
-            <a href="#" class="brand">Conf Bs As</a>
-        </div>      
-        <ul class="navigation">
-            <li><a href="#laConf" class="active">La conferencia</a></li>
-            <li><a href="#oradores">Los oradores</a></li>
-            <li><a href="#middle">El lugar y la fecha</a></li>
-            <li><a href="#anotate">Conviértete en orador</a></li>
-            <li><a href="#"><span class="ticket">Comprar tickets</span></a></li>
-        </ul>
-    </nav>
-    <header id="laConf">
-        <div class="slider">
-            <div class="sliderText">
-                <h2>Conf Bs As</h2>
-                <p>Bs As llega por primera vez a Argentina. Un evento para compartir con nuestra comunidad el conocimiento y experiencia de los expertos
-                    que están creando el futuro de Internet. Ven a conocer a miembros del evento, a otros estudiantes de Codo a Codo y los oradores de primera
-                    nivel que tenemos para ti. Te esperamos!
-                </p>
-                <a href="#" class="btnWhite">Quiero ser orador</a>
-                <a href="#" class="btnTicket">Comprar tickets</a>
-            </div>
-            <div class="overlay"></div>
+    <header>
+        <h1>Mi Página Web</h1>
+        <nav>
             <ul>
-                <li><img src="/images/ba1.jpg"></li>
-                <li><img src="/images/ba2.jpg"></li>
-                <li><img src="/images/ba3.jpg"></li>                
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#productos">Productos</a></li>
+                <li><a href="#reseñas">Reseñas</a></li>
+                <li><a href="#contacto">Contacto</a></li>
             </ul>
-        </div>
+        </nav>
     </header>
-    <section class="oradores" id="oradores">
-        <h3>CONOCE A LOS</h3>
-        <h2>ORADORES</h2>
-        <div class="cardGroup">
-            <div class="card">
-                <div class="cardImage"><img src="/images/steve.jpg"></div>
-                <div class="content">
-                    <div class="heading">
-                        <div class="javaScript">JavaScript</div>
-                        <div class="react">React</div>
-                        <h4>Steve Jobs</h4>
-                    </div>
-                    <div class="cardText">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                        Praesentium, minima! Libero consequatur minus veritatis cum, quasi debitis nam minima 
-                        odit omnis cumque architecto, labore non assumenda. Lorem ipsum dolor sit amet consectetur!
-                    </div>
-                </div>
-            </div>
-            <div class="card">
-                <div class="cardImage"><img src="/images/bill.jpg"></div>
-                <div class="content">
-                    <div class="heading">
-                        <div class="javaScript">JavaScript</div>
-                        <div class="react">React</div>
-                        <h4>Bill Gates</h4>
-                    </div>
-                    <div class="cardText">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                        Praesentium, minima! Libero consequatur minus veritatis cum, quasi debitis nam minima 
-                        odit omnis cumque architecto, labore non assumenda. Lorem ipsum dolor sit amet consectetur!
-                    </div>
-                </div>
-            </div>
-            <div class="card">
-                <div class="cardImage"><img src="/images/ada.jpeg"></div>
-                <div class="content">
-                    <div class="heading">
-                        <div class="negocios">Negocios</div>
-                        <div class="startups">Startups</div>
-                        <h4>Ada Lovelace</h4>
-                    </div>
-                    <div class="cardText">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                        Praesentium, minima! Libero consequatur minus veritatis cum, quasi debitis nam minima 
-                        odit omnis cumque architecto, labore non assumenda. Lorem ipsum dolor sit amet consectetur!
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>    
-    <section class="middle" id="middle">
-        <img src="/images/honolulu.jpg" class="middleImage">
-        <div class="middleText">
-            <h3>Bs As - Octubre</h3>
-            <p>Buenos Aires es la provincia y localidad más grande del estado de Argentina, en los Estados Unidos. 
-                Honolulu es la más sureña de entre las principales ciudades estadounidenses. 
-                Aunque el nombre de Honolulu se refiere al área urbana en la costa sureste de la isla de Oahu, 
-                la ciudad y el condado de Honolulu han formado una ciudad-condado consolidada 
-                que cubre toda la ciudad (aproximadamente 600km2 de superficie).
-            </p>
-            <a href="#" class="btnWhite">Conocé más</a>
-        </div>
 
-    </section>
-    <section class="anotate" id="anotate">
-        <h3>CONVIÉRTETE EN UN</h3>
-        <h2>ORADOR</h2>
-        <p>Anótate como orador para dar una <a href="#" class="ignite">charla ignite</a>. Cuéntanos de qué quieres hablar!</p>
-        <form action="POST" onsubmit="event.preventDefault();">
-            <div class="inputGroup">
-                <input type="text" name="nombre" id="nombre" placeholder="Nombre">
-                <input type="text" name="apellido" id="apellido" placeholder="Apellido">
+    <main>
+        <section id="inicio">
+            <h2>Bienvenidos</h2>
+            <p>Bienvenidos a nuestra página web. Aquí encontrarás información sobre nuestros productos y opiniones de nuestros clientes.</p>
+        </section>
+
+        <section id="productos">
+            <h2>Productos</h2>
+            <div class="products">
+                <div class="card">Producto 1</div>
+                <div class="card">Producto 2</div>
+                <div class="card">Producto 3</div>
             </div>
-            <textarea name="tema" id="tema" cols="30" rows="5" placeholder="Sobre qué quieres hablar?"></textarea>
-            <p class="info">Recuerda incluir un título para tu charla</p>
-            <input type="submit" id="btnEnviar" value="Enviar">
-        </form>
-    </section>
+        </section>
+
+        <section id="reseñas">
+            <h2>Reseñas</h2>
+            <div class="reviews">
+                <div class="review">Reseña 1</div>
+                <div class="review">Reseña 2</div>
+                <div class="review">Reseña 3</div>
+                <div class="review">Reseña 4</div>
+            </div>
+        </section>
+
+        <section id="contacto">
+            <h2>Contacto</h2>
+            <form action="https://formspree.io/f/tu_email" method="POST">
+                <label for="name">Nombre:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Correo Electrónico:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Mensaje:</label>
+                <textarea id="message" name="message" required></textarea>
+
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+    </main>
+
     <footer>
-        <ul class="footer">
-            <li><a href="#">Preguntas frecuentes</a></li>
-            <li><a href="#">Contáctanos</a></li>
-            <li><a href="#">Prensa</a></li>
-            <li><a href="#">Conferencias</a></li>
-            <li><a href="#">Términos y condiciones</a></li>
-            <li><a href="#">Privacidad</a></li>
-            <li><a href="#">Estudiantes</a></li>
-        </ul>
+        <p>&copy; 2023 Mi Página Web</p>
     </footer>
 </body>
 </html>

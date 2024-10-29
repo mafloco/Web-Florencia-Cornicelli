@@ -1,0 +1,106 @@
+/* General */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+/* Header and Navigation */
+header {
+    background: #333;
+    color: #fff;
+    padding: 1em;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 1em;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Main Content */
+main {
+    padding: 2em;
+}
+
+/* Products Section */
+.products {
+    display: flex;
+    gap: 1em;
+    flex-wrap: wrap;
+}
+
+.card {
+    background: #f9f9f9;
+    padding: 1em;
+    border: 1px solid #ddd;
+    flex: 1 1 30%;
+}
+
+/* Reviews Section */
+.reviews {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1em;
+}
+
+.review {
+    background: #f4f4f4;
+    padding: 1em;
+    border: 1px solid #ddd;
+}
+
+/* Contact Section */
+#contacto {
+    padding: 2em;
+    background: #fafafa;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+button {
+    background: #333;
+    color: #fff;
+    padding: 0.5em;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #555;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 1em;
+    background: #333;
+    color: #fff;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .products {
+        flex-direction: column;
+    }
+
+    nav ul {
+        flex-direction: column;
+    }
+}
